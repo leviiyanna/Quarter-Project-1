@@ -2,11 +2,15 @@
 <head>
     <title>Soulful Solace</title>
     <style>
-        #searchBar {
+         #searchBar {
             width: 300px;
             height: 30px;
             padding: 5px;
             font-size: 14px;
+            float: left;
+        }
+        .searchIcon {
+            float: right;
         }
         .nav {
             background-color: #c8dedb;
@@ -37,6 +41,19 @@
     </style>
 </head>
 <body>
+     <form>
+        <input type="text" id="searchBar" name="searchBar">
+        <button type="button" class="searchIcon" onclick="clearSearchBar()">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+
+    <script>
+        function clearSearchBar() {
+            document.getElementById("searchBar").value = "";
+        }
+    </script>
+    
     <div class="nav">
         <h1>Soulful Solace</h1>
         <ul>
@@ -48,7 +65,7 @@
 
     <div class="welcome-message">
         <h2>Welcome to Soulful Solace!</h2>
-        <p>The Art of Unconventional Support</p>
+        <p>~The Art of Unconventional Support~</p>
     </div>
 
     <div class="affirmations">
