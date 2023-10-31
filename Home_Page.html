@@ -53,12 +53,10 @@
         }
 
         .video-container {
-    display: flex;
-    justify-content: flex-end;
-    width: "320";
-    height: "240";
-}
-
+            display: flex;
+            justify-content: flex-end;
+        } 
+        
 </style>
 </head>
 
@@ -85,9 +83,11 @@
     <div class="affirmations">
         <p>"You Deserve Happiness and Inner Peace"</p>
     </div>
-   
-        <div class="video-container">
-        <video src="CAT VID.mp4" controls></video>
+
+     <div class="video-container">
+        <video width="320" height="240" controls>
+            <source src="CAT VID.mp4" type="video/mp4">
+        </video>
     </div>
     
    <audio id="background-music" autoplay loop>
