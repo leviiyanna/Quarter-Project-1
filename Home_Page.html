@@ -52,8 +52,19 @@
             margin-top: 50px;
         }
 
-      
-    </style>
+        .video-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+</style>
 </head>
 
 <body>
@@ -82,9 +93,9 @@
    
     <div>
         <h2>Comfort Video</h2>
-        <video width="320" height="240" controls>
-            <source src="CAT VID.mp4" type="video/mp4">
-        </video>
+        <div class="video-container">
+        <video src="CAT VID.mp4" controls></video>
+    </div>
     </div>
     
    <audio id="background-music" autoplay loop>
